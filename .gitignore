@@ -1,0 +1,17 @@
+*.iws
+*Db.properties
+*Db.script
+.settings
+user-api/stacktrace.log
+user-api/*.zip
+user-api/plugin.xml
+user-api/*.log
+user-api/*DB.*
+user-api/cobertura.ser
+.DS_Store
+user-api/target/
+user-api/out/
+user-api/web-app/plugins
+user-api/web-app/WEB-INF/classes
+user-api/.link_to_grails_plugins/
+user-api/target-eclipse/
