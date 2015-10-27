@@ -62,4 +62,13 @@ class UserServiceTest {
             Assert.assertEquals('invalid_email',br.error)
         }
     }
+
+    @Test
+    public void testSearchUser(){
+        JSONObject parameters = ['name':'Agustin', 'lastName':'Ragazzini Donghi', 'email':'agus@hotmail.com']
+        mockForConstraintsTests(User)
+        User user1 = service.createUser(parameters)
+        User user2 = service.searchUser(user1.id)
+        Assert.assertNotNull(user2)
+    }
 }

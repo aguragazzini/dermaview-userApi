@@ -1,6 +1,6 @@
 package user.api
 
-class User {
+class User implements Serializable {
 
     String name
     String lastName

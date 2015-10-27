@@ -20,8 +20,12 @@ class UserService {
             log.debug("El request es invalido ${causeMessage}")
             throw new BadRequestException("Invalid $causeMessage",'invalid_'+causeMessage,causeMessage)
         }
-
         return user
+    }
 
+    @Transactional
+    public User searchUser(long id){
+        User user = User.get(id)
+        return user
     }
 }
